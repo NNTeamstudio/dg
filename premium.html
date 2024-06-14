@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="premium.png">
+    <title>Tickets Draking - Premium</title>
+</head>
+
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Tickets Draking</span>
+                    <span class="profession">TD Studio'$</span>
+                </div>
+            </div>
+
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">                    
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="configuraciones.html">
+                            <i class="bx bx-cog icon"></i>
+                            <span class="text nav-text">Configuraciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="premium.html">
+                            <i class="bx bx-crown icon"></i>
+                            <span class="text nav-text">Premium</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="estadisticas.html">
+                            <i class="bx bx-stats icon"></i>
+                            <span class="text nav-text">Estadísticas</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="https://discord.com/invite/7KAE9w2Vb5">
+                            <i class="bx bx-support icon"></i>
+                            <span class="text nav-text">Soporte</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="reportar.html">
+                            <i class="bx bx-edit icon"></i>
+                            <span class="text nav-text">Reportar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Light Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-navbar">
+        <a href="#">
+            <p>@patreon</p>
+        </a>
+        </div>
+
+    <div class="announce-premium">
+        <div class="msg-premium">
+            <i class="bx bx-info-circle"></i><h1>¿Elige tu plan?</h1>
+            <p>A la hora de hacer tu compra del plan premium este se va a acreditar a un 
+                servidor que elijas, <a href="https://discord.com/invite/7KAE9w2Vb5">visita el servidor de soporte <span class="bx bx-link-external"></span></a> 
+                para más información.
+        </div>
+    </div>
+
+    <div class="plans-container">
+        <div class="premium-plan">
+        <div class="plan-title"><i class="bx bx-crown"> </i>Plan Premium</div>
+        <div class="plan-price"><cps>1.49$</cps><span>/mes</span></div>
+        <div class="plan-permanent-price"><cp>9.99$</cp><span>/permanente</span></div>
+        <div class="plan-small-letter">* Impuestos no incluidos.</div>
+        <div class="plan-features">
+        <div class="plan-feature"><i class="bx bx-check"></i> Paneles infinitos</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Hasta 20 componentes</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Sistema de valoraciones</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Sistema de cooldown</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Sistema de bloqueos</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Sistema de cierre salida</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Sistema de conteo tickets</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /purga</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /renombrar</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /configuraciones</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /aceptar-ticket</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /rechazar-ticket</div>
+        <div class="plan-feature"><i class="bx bx-check"></i> Comando /premium</div>
+        <div class="plan-buy button primary border" onclick="buy(1)">Comprar</div>
+        </div>
+        </div>
+
+        <div class="premium-free">
+            <div class="free-title"><i class="bx bx-crown"> </i>Premium Gratuito</div>
+            <div class="plan-price"><cps>3</cps><span>/días</span></div>
+            <div class="plan-permanent-price"><cp>No</cp><span>/permanente</span></div>
+            <div class="plan-small-letter">* Servidores menos de 500 usuarios.</div>
+            <div class="free-features">
+            <div class="free-feature"><i class="bx bx-check"></i> Paneles infinitos</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Hasta 20 componentes</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Sistema de valoraciones</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Sistema de cooldown</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Sistema de bloqueos</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Sistema de cierre salida</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Sistema de conteo tickets</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /purga</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /renombrar</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /configuraciones</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /aceptar-ticket</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /rechazar-ticket</div>
+            <div class="free-feature"><i class="bx bx-check"></i> Comando /premium</div>
+            <div class="plan-free cbutton secondary border" onclick="buy(1)">Conseguir</div>
+            </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

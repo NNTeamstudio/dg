@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <title>Tickets Draking - Estadísticas</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Tickets Draking</span>
+                    <span class="profession">TD Studio'$</span>
+                </div>
+            </div>
+
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">                    
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="configuraciones.html">
+                            <i class="bx bx-cog icon"></i>
+                            <span class="text nav-text">Configuraciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="premium.html">
+                            <i class="bx bx-crown icon"></i>
+                            <span class="text nav-text">Premium</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="estadisticas.html">
+                            <i class="bx bx-stats icon"></i>
+                            <span class="text nav-text">Estadísticas</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="https://discord.com/invite/7KAE9w2Vb5">
+                            <i class="bx bx-support icon"></i>
+                            <span class="text nav-text">Soporte</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="reportar.html">
+                            <i class="bx bx-edit icon"></i>
+                            <span class="text nav-text">Reportar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="index.html">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Light Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-navbar">
+        <a href="#">
+            <p>@patreon</p>
+        </a>
+        </div>
+
+    <div class="estadisticas-container">
+        <div class="stats">
+            <h2>Estadísticas Generales</h2>
+            <span class="bx bx-planet"></span>
+            <h4>Servidores</h4> 
+            <p><strong id="server-count"></strong> Servidores</p>
+            <h4>Usuarios</h4>
+            <p><strong id="user-count"></strong> Usuarios</p>
+        </div>
+
+        <div class="system">
+            <h2>Estadísticas Sistema</h2>
+            <span class="bx bx-laptop"></span>
+            <h4>Sistema</h4>
+            <p><strong id="system">Linux</strong> Operativo</p>
+            <h4>Latencia</h4>
+            <p><strong id="latencia">41</strong> ms</p>
+        </div>
+
+        <div class="votes">
+            <h2>Estadísticas Votos</h2>
+            <span class="bx bx-diamond"></span>
+            <h4>Votos Totales</h4>
+            <p><strong id="vote-count"></strong> Votos</p>
+            <h4>Mensual</h4>
+            <p><strong id="vote-month"></strong> Votos</p>
+        </div>
+
+        <div class="datos">
+            <h2>Base de Datos</h2>
+            <span class="bx bx-book-bookmark"></span>
+            <h4>Paneles</h4>
+            <p><strong id="panels"></strong> Paneles</p>
+            <h4>Components</h4>
+            <p><strong id="components"></strong> Componentes</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
